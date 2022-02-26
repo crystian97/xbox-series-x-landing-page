@@ -6,6 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color:#0C0C0C;
 }
@@ -131,15 +134,79 @@ top: 56px;
     display: flex;
     flex-direction: row;
     margin-top: 300px;
+    width: 90vw;
     justify-content: space-around;
+    font-family: 'Inter', sans-serif;
 }
 .description{
     display: flex;
     flex-direction: column;
- 
   
 }
-.description-paragraph{
-    line-height: 123px;
+.description h2{
+    font-size:64px;
 }
+.description p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.box-game{
+    height: 800px;
+}
+.games{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:300px
+}
+.box-games{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 480px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.box-games-logo{
+z-index: 2;
+width: 300px;
+height: 65,6px;
+padding-bottom: 65px;
+
+
+}
+/* games background */
+.farcry6{
+    background-image: url('../img/farcry6.png');
+    background-size: cover;
+    background-position: center;
+
+   
+}
+.forza-horizon{
+    background-image:url('../img/forza-horizon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.fifa{
+    background-image: url('../img/fifa.png');
+    background-size: cover;
+    background-position: center;
+
+
+}
+.minecraft{
+    background-image: url('../img/minecraft.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
 
