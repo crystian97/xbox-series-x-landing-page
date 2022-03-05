@@ -225,12 +225,16 @@ padding-bottom: 65px;
     align-items: center;
     margin-top: 300px;
     width: 1228px;
+    height: 1000px;
+    font-family: 'Inter', sans-serif;
+    color: #777777;
   }
   .faqs h2 {
     width: 100%;
     font-weight: 600;
     font-size: 4.8rem;
     margin-bottom: 17px;
+    font-family: 'Inter', sans-serif;
   }
   .faqs h2 span {
     color: #9BF00B;
