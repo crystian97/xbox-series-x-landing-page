@@ -139,7 +139,7 @@ height: 44px;
     flex-direction: row;
     margin-top: 400px;
     width: 90vw;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Inter', sans-serif;
 }
 .description{
@@ -171,10 +171,11 @@ height: 44px;
 .box-games{
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 1000px;
     width: 100%;
     justify-content: flex-end;
     align-items: center;
+    
 
 }
 .box-games-logo{
@@ -189,69 +190,96 @@ padding-bottom: 65px;
 .farcry6{
     background-image: url('../img/farcry6.png');
     background-size: cover;
-    background-position: center;
+    background-position:  center;
+    
 
    
 }
 .forza-horizon{
     background-image:url('../img/forza-horizon.png');
     background-size: cover;
-    background-position: center;
+    
     background-repeat: no-repeat;
 
 }
 .fifa{
     background-image: url('../img/fifa.png');
     background-size: cover;
-    background-position: center;
+    
 
 
 }
 .minecraft{
     background-image: url('../img/minecraft.png');
     background-size: cover;
-    background-position: center;
+    
 
 }
 
 /* faq */
-#faq{
-    width: 100% ;
-    color: #777777;
-    padding: 20px;
+
+
+.faqs .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
-}
-.accordion{
+    margin-top: 300px;
+    width: 1228px;
+  }
+  .faqs h2 {
     width: 100%;
-    
-}
-details>summary {
- 
-    list-style: none;
+    font-weight: 600;
+    font-size: 4.8rem;
+    margin-bottom: 17px;
   }
-  summary::-webkit-details-marker {
-    display: none
+  .faqs h2 span {
+    color: #9BF00B;
+  }
+  .faqs .content .faq {
+    width: 100%;
+    padding-bottom: 31px;
+    border-bottom: 2px solid  #777777;
   }
   
-  summary::after {
-    content:  url('../img/close.png');
-    right: 100px;
-
+  .faqs .content .faq .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 43px;
+    cursor: pointer;
   }
-  details[open] summary:after {
-    content:  url('../img/open.png');
-    right: 100px;
+  
+  .faqs .content .faq h3 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 36px;
   }
-  details{
-    
+  
+  .arrow{
+    font-size: 2.5rem;
+    color:  #777777;
   }
-  details[open]{
-      
-      /* background-color: #9BF00B; */
+  
+  .rotate{
+    transform: rotate(180deg);
+    color:  #9bf00b;
   }
+  
+  .answer {
+    display: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 27px;
+    color:  #c0c0c0;
+    padding-left: 20px;
+    margin-top: 36px;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  
 /* footer    */
 .footer{
     display: flex;

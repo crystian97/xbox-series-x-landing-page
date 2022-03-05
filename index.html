@@ -55,27 +55,32 @@
         </div>
 
     </section>
-    <section id="faq">
-        <h2><span class="primary">  Perguntas  </span>frequentes</h2>
-            <div class="accordion">
-            <details>
-                <summary>Meus jogos anteriores do Xbox vão funcionar no Xbox Series X?</summary>
-                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-              
-              </details>
-          
-              <details>
-                <summary>O que está incluído no Xbox Series X?</summary>
-                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-              
-              </details>
-              <details>
-                <summary>Como sei se minha TV é compatível com 4K?</summary>
-                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-              
-              </details>
-        </div>
+    <section class="faqs">
+        <div class="content">
+            <h2><span>Perguntas</span> frequentes</h2>
+            <div class="faq">
+                <div class="question">
+                    <h3>Meus jogos anteriores do Xbox vão funcionar no Xbox Series X?</h3>
+                    <i class="fas fa-angle-down arrow"></i>
+                </div>
+                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>O que está incluído no Xbox Series X?</h3>
+                    <i class="fas fa-angle-down arrow"></i>
+                </div>
+                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>Como sei se minha TV é compatível com 4K?</h3>
+                    <i class="fas fa-angle-down arrow"></i>
+                </div>
+                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
 
+        </div>
     </section>
     <footer class="footer">
         <div><img src="./src/img/logo-xbox.svg" alt="Logo XBOX" /></div>
@@ -87,5 +92,15 @@
 
 
 </body>
+<script>
+    const toggle = document.querySelectorAll('.question')
+
+    toggle.forEach(e => {
+        e.addEventListener('click', () => {
+            e.nextElementSibling.classList.toggle('active')
+            e.childNodes[3].classList.toggle('rotate')
+        })
+    });
+</script>
 
 </html>
